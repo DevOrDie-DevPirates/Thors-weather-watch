@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor's Weather Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Thor's Weather Watch ⚡</h1>
+        <div id="login-signup">
+            <button onclick="login()">Login</button>
+            <button onclick="signup()">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="search-container">
+        <input type="text" id="city-search" placeholder="Enter city name">
+        <button onclick="getWeather()">Search</button>
+        <button id="fav-btn" onclick="saveToFavorites()">★</button>
+        <div class="unit-toggle">
+            <button id="toggle-c" onclick="setUnit('C')">°C</button>
+            <button id="toggle-f" onclick="setUnit('F')">°F</button>
+        </div>
+    </section>
+
+    <section id="weather-display">
+        <div class="current-weather">
+            <h2>Current Weather in <span id="city-name"></span></h2>
+            <div id="current-temp">25°C</div>
+            <div id="weather-conditions">Sunny</div>
+            <div class="weather-details">
+                <span id="wind-speed">Wind: 10 km/h</span>
+                <span id="humidity">Humidity: 50%</span>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h3>1-Week Forecast</h3>
+            <div id="forecast-cards">
+                <!-- Forecast cards -->
+            </div>
+        </div>
+    </section>
+
+    <section id="notifications">
+        <h3>Weather Alerts</h3>
+        <div id="alerts">
+            <!-- Dynamic alerts -->
+        </div>
+    </section>
+
+    <!-- Profile & Location Dashboard -->
+    <section id="dashboard">
+        <h2>Your Dashboard</h2>
+        <div id="profile">
+            <p>Welcome, <span id="user-name">User</span></p>
+            <p>Location: <span id="user-location"></span></p>
+        </div>
+    </section>
+
+</body>
+</html>
