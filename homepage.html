@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thor's Weather Watch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather.css">
 </head>
 <body>
 
@@ -27,7 +28,8 @@
     </section>
 
     <section id="weather-display">
-        <div class="current-weather">
+        
+        <!-- <div class="current-weather">
             <h2>Current Weather in <span id="city-name"></span></h2>
             <div id="current-temp">25°C</div>
             <div id="weather-conditions">Sunny</div>
@@ -35,12 +37,68 @@
                 <span id="wind-speed">Wind: 10 km/h</span>
                 <span id="humidity">Humidity: 50%</span>
             </div>
-        </div>
+        </div> -->
 
-        <div class="forecast">
+        <!-- <div class="forecast">
             <h3>1-Week Forecast</h3>
-            <div id="forecast-cards">
+            
+            <div id="forecast-cards"> -->
                 <!-- Forecast cards -->
+            <!-- </div>
+            
+        </div> -->
+        <div class="weather-container">
+            <header>
+                <h1>Weather Forecast</h1>
+                <h4>
+                <p>City: <span id="city">Prayagraj</span></p>
+                <p>Air quality: 208-Poor</p>
+                </h4>
+            </header>
+    
+            <div class="current-weather">
+                <div class="temp">
+                    <span id="temperature">22°C</span>
+                </div>
+                <div class="description">
+                    <p id="weather-description">Partly Cloudy</p>
+                </div>
+            </div>
+    
+            <div class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-cards">
+                    <div class="forecast-card">
+                        <h3>Mon</h3>
+                        <p>21°C</p>
+                        <p>Sunny</p>
+                        <img class="icons" src="icons/sun-solid.svg">
+                    </div>
+                    <div class="forecast-card">
+                        <h3>Tue</h3>
+                        <p>20°C</p>
+                        <p>Cloudy</p>
+                        <img class="icons" src="icons/cloud-solid.svg">
+                    </div>
+                    <div class="forecast-card">
+                        <h3>Wed</h3>
+                        <p>18°C</p>
+                        <p>Rain</p>
+                        <img class="icons" src="icons/cloud-rain-solid.svg">
+                    </div>
+                    <div class="forecast-card">
+                        <h3>Thru</h3>
+                        <p>22°C</p>
+                        <p>Sunny</p>
+                        <img class="icons" src="icons/sun-solid.svg">
+                    </div>
+                    <div class="forecast-card">
+                        <h3>Fri</h3>
+                        <p>24°C</p>
+                        <p>Partly Cloudy</p>
+                        <img class="icons" src="icons/cloud-sun-solid.svg"
+                    </div>
+                </div>
             </div>
         </div>
     </section>
